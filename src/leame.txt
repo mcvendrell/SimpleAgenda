@@ -1,0 +1,76 @@
+1.- Requerimientos mínimos para la aplicación:
+
+	- Sistema Operativo Windows 9x, Windows NT.
+	- 8 Mb de memoria RAM.
+	- 8 Mb de espacio libre en el disco duro (más al menos 4 durante la instalación).
+	- Ratón instalado.
+	- Para la configuración regional de hora no usar el formato AM/PM
+
+    NOTA: Si el programa da un error del tipo "no se ha encontrado xxx.OCX o falta algún componente..."
+	  acuda a mi web http://manuel.conde.name y bájese la instalación del programa, la cual le añadirá
+	  al sistema los componentes que necesita la aplicación para funcionar.
+
+
+2.- Descripción:
+
+Esta sencilla aplicación permite establecer avisos en cualquier fecha y a cualquier
+hora del día con un consumo mínimo de CPU (menos del 0.01% bajo Windows NT 4.0).
+
+Para ello emplea una base de datos creada en Access 97 de un tamaño muy pequeño
+(80 Kb sin datos).
+
+La aplicación no mantiene una conexión a la base de datos constantemente (esto consumiría
+recursos) sino que se conecta para obtener los datos que necesita y se desconecta cuando
+ya no precisa más datos. La aplicación se ha desarrollado con el menor consumo posible
+de recursos. Una vez que se activa la agenda, por regla general nunca se encuentra conectado
+a la base de datos (no consume recursos).
+
+Dispone de una pequeña ayuda en el menú principal de la aplicación.
+
+
+Si detecta algún error o quiere realizar algún comentario respecto de la aplicación,
+escríbame a: manu_conde@hotmail.com     o consulte mi web      http://manuel.conde.name
+
+Se prohibe la venta de este programa. Este programa es gratuíto y el copyright pertenece
+a su autor. Se autoriza su libre distribución siempre que sea en su paquete de instalación
+original. El autor no se responsabiliza de posibles daños causados por la aplicación.
+
+El último mensaje es necesario para liberarme de posibles responsabilidades, pero la 
+aplicación es muy sencilla y no emplea recursos peligrosos, por lo que el riesgo de que
+causase algún daño es prácticamente inexistente.
+
+
+3.- Versiones
+
+  * Versión 3.0
+    Añadida la opción de avisos sonoros y repetición de tareas automática.
+
+
+  * Versión 2.3
+    Corregido un error cuando el usuario no tenía el formato de hora en HH:mm que provocaba
+    avisos erróneos si se empleaba la agenda antes de las 10.00. No se debe usar el formato AM/PM.
+    Si se intenta añadir una tarea a una hora ya existente avisa.
+    Ahora se permiten añadir tareas aunque la agenda esté activa.
+    Se ha metido la opción de autoactivación al inicio.
+
+
+  * Versión 2.2
+    Se ha modificado la presencia visual y se han añadido opciones de impresión.
+    Además cambia automáticamente de día si se deja el ordenador constantemente encendido.
+
+
+  * Versión 2.1
+    Se ha añadido la opción de búsquedas. Avisa si quedan tareas de días anteriores pendientes.
+
+
+  * Versión 2.0
+    Se ha añadido una agenda telefónica.
+
+
+  * Versión 1.0
+    La versión original, sólo hace de agenda, sin más. Tiene algunos fallos menores, 
+    corregidos en las posteriores versiones.
+
+
+(c) Manuel Conde Vendrell
+http://manuel.conde.name
