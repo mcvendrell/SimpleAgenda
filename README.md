@@ -1,19 +1,19 @@
 SimpleAgenda
 ============
 
-La agenda más sencilla que podrás tener en tu sistema Windows
+La agenda mÃ¡s sencilla que podrÃ¡s tener en tu sistema Windows
 
-Este proyecto se realizó en Visual Basic 6 en el año 2001 y su última actualización fue en 2010.
+Este proyecto se realizÃ³ en Visual Basic 6 en el aÃ±o 2001 y su Ãºltima actualizaciÃ³n fue en 2010.
 
-Es una extremadamente sencilla agenda que avisa de cualquier cita programada. El programa es muy pequeño (140 Kb) y la base de datos también (80 Kb vacía), por lo que su rendimiento es muy alto (ocupa menos del 0.01% de la CPU de aquél año, así que imgania hoy...).
+Es una extremadamente sencilla agenda que avisa de cualquier cita programada. El programa es muy pequeÃ±o (140 Kb) y la base de datos tambiÃ©n (80 Kb vacÃ­a), por lo que su rendimiento es muy alto (ocupa menos del 0.01% de la CPU de aquÃ©l aÃ±o, asÃ­ que imgania hoy...).
 
-No tiene absolutamente ningún añadido supérfluo: es una agenda de citas y sólo hace eso. La creé porque estaba cansado de tener que instalar programas enormes con miles de funciones entre las que estaba la de agenda, cuando lo que yo quería era sólo una agenda.
+No tiene absolutamente ningÃºn aÃ±adido supÃ©rfluo: es una agenda de citas y sÃ³lo hace eso. La creÃ© porque estaba cansado de tener que instalar programas enormes con miles de funciones entre las que estaba la de agenda, cuando lo que yo querÃ­a era sÃ³lo una agenda.
 
-Hoy VB6 está obsoleto, pero esta agenda todavía funciona perfectamente y puede servirle a algún programador que esté aprendiendo.
+Hoy VB6 estÃ¡ obsoleto, pero esta agenda todavÃ­a funciona perfectamente y puede servirle a algÃºn programador que estÃ© aprendiendo.
 
-En http:\\manuel.conde.name puedes encontrar el paquete de instalación final.
+En [http:\\manuel.conde.name](http:\\manuel.conde.name) puedes encontrar el paquete de instalaciÃ³n final.
 
-Licencia: se usa la licencia del MIT, así que lo único que hay que hacer es incluir mi nombre en caso de usar el proyecto.
+Licencia: se usa la licencia del MIT, asÃ­ que lo Ãºnico que hay que hacer es incluir mi nombre en caso de usar el proyecto.
 
 SimpleAgenda (english)
 ======================
@@ -28,6 +28,9 @@ It has absolutely no superfluous added: it is an appointment calendar and just d
 
 Today VB6 is obsolete, but this scheduler still works perfectly and can give some ideas to newest programmers.
 
-In http:\\manuel.conde.name you can find the final install package.
+In [http:\\manuel.conde.name](http:\\manuel.conde.name) you can find the final install package.
 
 License: MIT license is used, so all you have to do is include my name in case of using the project.
+
+![Imagen Principal](http://manuel.conde.name/SimpleAgenda/SimpleAgenda1.jpg)
+![Imagen Ampliada](http://manuel.conde.name/SimpleAgenda/SimpleAgenda2.jpg)
