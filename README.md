@@ -32,5 +32,5 @@ In [http://mcvendrell.com/conde/](http://mcvendrell.com/conde/) you can find the
 
 License: MIT license is used, so all you have to do is include my name in case of using the project.
 
-![Imagen Principal](http://manuel.conde.name/SimpleAgenda/SimpleAgenda1.jpg)
-![Imagen Ampliada](http://manuel.conde.name/SimpleAgenda/SimpleAgenda2.jpg)
+![Imagen Principal](http://mcvendrell.com/conde/SimpleAgenda/SimpleAgenda1.jpg)
+![Imagen Ampliada](http://mcvendrell.com/conde/SimpleAgenda/SimpleAgenda2.jpg)
