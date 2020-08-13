@@ -11,7 +11,7 @@ No tiene absolutamente ningún añadido supérfluo: es una agenda de citas y só
 
 Hoy VB6 está obsoleto, pero esta agenda todavía funciona perfectamente y puede servirle a algún programador que esté aprendiendo.
 
-En [http:\\manuel.conde.name](http:\\manuel.conde.name) puedes encontrar el paquete de instalación final.
+En [http://mcvendrell.com/conde/](http://mcvendrell.com/conde/) puedes encontrar el paquete de instalación final.
 
 Licencia: se usa la licencia del MIT, así que lo único que hay que hacer es incluir mi nombre en caso de usar el proyecto.
 
@@ -28,7 +28,7 @@ It has absolutely no superfluous added: it is an appointment calendar and just d
 
 Today VB6 is obsolete, but this scheduler still works perfectly and can give some ideas to newest programmers.
 
-In [http:\\manuel.conde.name](http:\\manuel.conde.name) you can find the final install package.
+In [http://mcvendrell.com/conde/](http://mcvendrell.com/conde/) you can find the final install package.
 
 License: MIT license is used, so all you have to do is include my name in case of using the project.
 
