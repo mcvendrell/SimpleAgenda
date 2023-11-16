@@ -5,19 +5,28 @@ Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
 Begin VB.Form AgendaFrm 
    BackColor       =   &H00FFFFFF&
    BorderStyle     =   1  'Fixed Single
-   Caption         =   "SimpleAgenda 3.0"
+   Caption         =   "SimpleAgenda"
    ClientHeight    =   5805
    ClientLeft      =   45
    ClientTop       =   615
-   ClientWidth     =   9285
+   ClientWidth     =   13035
    Icon            =   "AgendaFrm.frx":0000
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
-   LockControls    =   -1  'True
    MaxButton       =   0   'False
    ScaleHeight     =   5805
-   ScaleWidth      =   9285
+   ScaleWidth      =   13035
    StartUpPosition =   2  'CenterScreen
+   Begin VB.CommandButton BtnSalir 
+      BackColor       =   &H00FFEED9&
+      Caption         =   "&Salir"
+      Height          =   855
+      Left            =   11280
+      Style           =   1  'Graphical
+      TabIndex        =   23
+      Top             =   120
+      Width           =   1635
+   End
    Begin MSComDlg.CommonDialog DlgSonido 
       Left            =   2700
       Top             =   1440
@@ -30,7 +39,7 @@ Begin VB.Form AgendaFrm
       Caption         =   "Autoactivar al inicio"
       Height          =   195
       Left            =   3000
-      TabIndex        =   22
+      TabIndex        =   20
       ToolTipText     =   "Automáticamente activa la agenda al ser iniciada"
       Top             =   1140
       Width           =   1755
@@ -44,11 +53,11 @@ Begin VB.Form AgendaFrm
    Begin MSHierarchicalFlexGridLib.MSHFlexGrid FlxDatos 
       Height          =   2715
       Left            =   120
-      TabIndex        =   14
+      TabIndex        =   13
       TabStop         =   0   'False
       Top             =   3000
-      Width           =   9075
-      _ExtentX        =   16007
+      Width           =   12795
+      _ExtentX        =   22569
       _ExtentY        =   4789
       _Version        =   393216
       BackColor       =   16777215
@@ -68,7 +77,7 @@ Begin VB.Form AgendaFrm
    Begin MSComCtl2.MonthView Calendar 
       Height          =   2370
       Left            =   120
-      TabIndex        =   13
+      TabIndex        =   12
       TabStop         =   0   'False
       Top             =   180
       Width           =   2715
@@ -80,7 +89,7 @@ Begin VB.Form AgendaFrm
       Appearance      =   1
       MonthBackColor  =   14221054
       ShowWeekNumbers =   -1  'True
-      StartOfWeek     =   16318466
+      StartOfWeek     =   16384002
       TitleBackColor  =   15838027
       TitleForeColor  =   0
       TrailingForeColor=   12632256
@@ -95,10 +104,20 @@ Begin VB.Form AgendaFrm
       Left            =   2940
       ScaleHeight     =   900
       ScaleWidth      =   5160
-      TabIndex        =   15
+      TabIndex        =   14
       TabStop         =   0   'False
       Top             =   120
       Width           =   5160
+      Begin VB.CommandButton BtnBuscar 
+         BackColor       =   &H00FFEED9&
+         Caption         =   "&Buscar"
+         Height          =   375
+         Left            =   3480
+         Style           =   1  'Graphical
+         TabIndex        =   24
+         Top             =   60
+         Width           =   1635
+      End
       Begin VB.CommandButton BtnTlfns 
          BackColor       =   &H00FFEED9&
          Caption         =   "&Ver Teléfonos"
@@ -139,16 +158,6 @@ Begin VB.Form AgendaFrm
          Top             =   480
          Width           =   1635
       End
-      Begin VB.CommandButton BtnSalir 
-         BackColor       =   &H00FFEED9&
-         Caption         =   "&Salir"
-         Height          =   375
-         Left            =   3480
-         Style           =   1  'Graphical
-         TabIndex        =   5
-         Top             =   60
-         Width           =   1635
-      End
       Begin VB.CommandButton BtnActivar 
          BackColor       =   &H00FFEED9&
          Caption         =   "Ac&tivar la Agenda"
@@ -165,7 +174,7 @@ Begin VB.Form AgendaFrm
          Height          =   375
          Left            =   60
          Style           =   1  'Graphical
-         TabIndex        =   16
+         TabIndex        =   15
          TabStop         =   0   'False
          Top             =   60
          Visible         =   0   'False
@@ -186,16 +195,16 @@ Begin VB.Form AgendaFrm
       EndProperty
       Height          =   1575
       Left            =   3060
-      TabIndex        =   18
+      TabIndex        =   17
       Top             =   1035
       Visible         =   0   'False
-      Width           =   6135
+      Width           =   9855
       Begin VB.CheckBox ChkRepetir 
          BackColor       =   &H00FFEED9&
          Caption         =   "Repetir"
          Height          =   195
          Left            =   1740
-         TabIndex        =   10
+         TabIndex        =   9
          Top             =   360
          Width           =   855
       End
@@ -203,9 +212,9 @@ Begin VB.Form AgendaFrm
          BackColor       =   &H00FFEED9&
          Caption         =   "..."
          Height          =   300
-         Left            =   5640
+         Left            =   9480
          Style           =   1  'Graphical
-         TabIndex        =   9
+         TabIndex        =   8
          Top             =   1000
          Width           =   315
       End
@@ -216,10 +225,10 @@ Begin VB.Form AgendaFrm
          Left            =   780
          Locked          =   -1  'True
          MaxLength       =   200
-         TabIndex        =   8
+         TabIndex        =   7
          Text            =   "Opcional: seleccione el archivo de sonido a reproducir   --------------->"
          Top             =   1020
-         Width           =   4875
+         Width           =   8715
       End
       Begin VB.CommandButton BtnCancelar 
          BackColor       =   &H00FFEED9&
@@ -228,7 +237,7 @@ Begin VB.Form AgendaFrm
          Height          =   360
          Left            =   4500
          Style           =   1  'Graphical
-         TabIndex        =   12
+         TabIndex        =   11
          Top             =   260
          Width           =   1455
       End
@@ -239,7 +248,7 @@ Begin VB.Form AgendaFrm
          Height          =   360
          Left            =   2940
          Style           =   1  'Graphical
-         TabIndex        =   11
+         TabIndex        =   10
          Top             =   260
          Width           =   1455
       End
@@ -249,10 +258,10 @@ Begin VB.Form AgendaFrm
          Index           =   1
          Left            =   780
          MaxLength       =   200
-         TabIndex        =   7
+         TabIndex        =   6
          Text            =   "Escriba aquí la descripción de la tarea..."
          Top             =   660
-         Width           =   5175
+         Width           =   9015
       End
       Begin VB.TextBox TxtOb 
          BackColor       =   &H00E8FFFF&
@@ -260,7 +269,7 @@ Begin VB.Form AgendaFrm
          Index           =   0
          Left            =   780
          MaxLength       =   5
-         TabIndex        =   6
+         TabIndex        =   5
          Text            =   "12:00"
          Top             =   300
          Width           =   555
@@ -281,7 +290,7 @@ Begin VB.Form AgendaFrm
          ForeColor       =   &H000000FF&
          Height          =   195
          Left            =   60
-         TabIndex        =   24
+         TabIndex        =   22
          Top             =   1350
          Visible         =   0   'False
          Width           =   6015
@@ -293,7 +302,7 @@ Begin VB.Form AgendaFrm
          Height          =   195
          Index           =   2
          Left            =   180
-         TabIndex        =   23
+         TabIndex        =   21
          Top             =   1065
          Width           =   495
       End
@@ -304,7 +313,7 @@ Begin VB.Form AgendaFrm
          Height          =   195
          Index           =   1
          Left            =   180
-         TabIndex        =   20
+         TabIndex        =   19
          Top             =   705
          Width           =   420
       End
@@ -315,31 +324,10 @@ Begin VB.Form AgendaFrm
          Height          =   195
          Index           =   0
          Left            =   180
-         TabIndex        =   19
+         TabIndex        =   18
          Top             =   345
          Width           =   345
       End
-   End
-   Begin VB.Label LblInfo 
-      Alignment       =   2  'Center
-      BackColor       =   &H00FFFFFF&
-      Caption         =   "http:// manuel.conde. name"
-      BeginProperty Font 
-         Name            =   "Tahoma"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H00F1AB4B&
-      Height          =   615
-      Left            =   8160
-      TabIndex        =   21
-      ToolTipText     =   "Pinchar para ir a la página web"
-      Top             =   300
-      Width           =   1155
    End
    Begin VB.Label Lbls 
       Alignment       =   2  'Center
@@ -358,9 +346,9 @@ Begin VB.Form AgendaFrm
       ForeColor       =   &H00000000&
       Height          =   315
       Left            =   120
-      TabIndex        =   17
+      TabIndex        =   16
       Top             =   2700
-      Width           =   9075
+      Width           =   12795
    End
    Begin VB.Menu MenuPrincipal 
       Caption         =   "Menú Principal"
@@ -486,7 +474,7 @@ End Function
 'Resetea el flex de datos
 Private Sub InicializaFlex()
   FlxDatos.Clear
-  FlxDatos.FormatString = "^Hora     |Tarea                                                                                        |Sonido                                                      |^Activa"
+  FlxDatos.FormatString = "^Hora     |Tarea                                                                                                                                                                            |Sonido                                                      |^Activa"
   FlxDatos.Rows = 2
 End Sub
 
@@ -655,6 +643,8 @@ Private Sub Form_Load()
     End
   End If
   
+  Me.Caption = "SimpleAgenda " & App.Major & "." & App.Minor
+  
   'Obtener la ruta  de trabajo
   mstrPath = App.Path
   'Si se ejecuta en local no devuelve la última barra, pero en remoto si, comprobarlo
@@ -727,12 +717,6 @@ End Sub
 'Capturar el ratón sobre el tray
 Private Sub Form_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
   Dim Msg As Long
-  
-  'Al salir de la label, restablecer su color
-  If LblInfo.FontUnderline Then
-    LblInfo.FontUnderline = False
-    LblInfo.ForeColor = &HF1AB4B
-  End If
   
   If Me.ScaleMode = vbPixels Then
     Msg = X
@@ -852,6 +836,11 @@ End Sub
 'Ver los tlfns
 Private Sub BtnTlfns_Click()
   TlfnsFrm.Show vbModal
+End Sub
+
+'Mostrar buscador
+Private Sub BtnBuscar_Click()
+  BuscarFrm.Show vbModal
 End Sub
 
 'Terminar la aplicación
@@ -1143,15 +1132,3 @@ Private Sub TxtOb_Validate(Index As Integer, Cancel As Boolean)
   End Select
 End Sub
 
-'Lanzar la web
-Private Sub LblInfo_Click()
-  ShellExecute hwnd, "open", "http://manuel.conde.name", vbNullString, vbNullString, SW_SHOW
-End Sub
-
-'Destacar el enlace
-Private Sub LblInfo_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
-  If Not LblInfo.FontUnderline Then
-    LblInfo.FontUnderline = True
-    LblInfo.ForeColor = &H0
-  End If
-End Sub

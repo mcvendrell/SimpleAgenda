@@ -64,12 +64,12 @@ Begin VB.Form AcercaDeFrm
    Begin VB.Label LblWeb 
       AutoSize        =   -1  'True
       BackColor       =   &H00FFFFFF&
-      Caption         =   "http://manuel.conde.name"
+      Caption         =   "http://mcvendrell.com"
       Height          =   195
       Left            =   2850
       TabIndex        =   12
       Top             =   2955
-      Width           =   1905
+      Width           =   1575
    End
    Begin VB.Label LblEmail 
       AutoSize        =   -1  'True
@@ -255,7 +255,7 @@ End Sub
 
 'Lanzar el mail
 Private Sub LblEmail_Click()
-  ShellExecute hwnd, "open", "mailto:manuel_conde@hotmail.com", vbNullString, vbNullString, SW_SHOW
+  ShellExecute hwnd, "open", "mailto:manu_conde@hotmail.com", vbNullString, vbNullString, SW_SHOW
 End Sub
 
 'Destacar el enlace
@@ -268,7 +268,7 @@ End Sub
 
 'Lanzar la web
 Private Sub LblWeb_Click()
-  ShellExecute hwnd, "open", "http://manuel.conde.name", vbNullString, vbNullString, SW_SHOW
+  ShellExecute hwnd, "open", "http://mcvendrell.com", vbNullString, vbNullString, SW_SHOW
 End Sub
 
 'Destacar el enlace

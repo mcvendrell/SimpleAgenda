@@ -4,47 +4,47 @@ Begin VB.Form BuscarFrm
    BackColor       =   &H00FFFFFF&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Buscar"
-   ClientHeight    =   4470
+   ClientHeight    =   7365
    ClientLeft      =   45
    ClientTop       =   330
-   ClientWidth     =   9210
+   ClientWidth     =   13485
    LinkTopic       =   "Form1"
    LockControls    =   -1  'True
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   4470
-   ScaleWidth      =   9210
+   ScaleHeight     =   7365
+   ScaleWidth      =   13485
    StartUpPosition =   1  'CenterOwner
    Begin VB.CommandButton BtnImprimir 
       BackColor       =   &H00FFEED9&
       Caption         =   "&Imprimir"
-      Height          =   360
-      Left            =   6360
+      Height          =   420
+      Left            =   6420
       Style           =   1  'Graphical
       TabIndex        =   5
-      Top             =   560
+      Top             =   675
       Width           =   2775
    End
    Begin VB.CommandButton BtnSalir 
       BackColor       =   &H00FFEED9&
       Cancel          =   -1  'True
       Caption         =   "&Salir"
-      Height          =   360
-      Left            =   6360
+      Height          =   420
+      Left            =   6420
       Style           =   1  'Graphical
       TabIndex        =   6
-      Top             =   960
+      Top             =   1140
       Width           =   2775
    End
    Begin VB.CommandButton BtnAceptar 
       BackColor       =   &H00FFEED9&
       Caption         =   "Buscar"
       Default         =   -1  'True
-      Height          =   360
-      Left            =   6360
+      Height          =   420
+      Left            =   6420
       Style           =   1  'Graphical
       TabIndex        =   4
-      Top             =   160
+      Top             =   225
       Width           =   2775
    End
    Begin VB.Frame FraDatos 
@@ -59,11 +59,42 @@ Begin VB.Form BuscarFrm
          Italic          =   -1  'True
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   1155
+      Height          =   1515
       Left            =   120
       TabIndex        =   9
       Top             =   120
-      Width           =   6135
+      Width           =   6195
+      Begin VB.OptionButton OptBuscar 
+         BackColor       =   &H00FFFFFF&
+         Caption         =   ">"
+         Height          =   195
+         Index           =   2
+         Left            =   3180
+         TabIndex        =   15
+         Top             =   340
+         Value           =   -1  'True
+         Width           =   435
+      End
+      Begin VB.OptionButton OptBuscar 
+         BackColor       =   &H00FFFFFF&
+         Caption         =   "="
+         Height          =   195
+         Index           =   1
+         Left            =   2580
+         TabIndex        =   14
+         Top             =   340
+         Width           =   435
+      End
+      Begin VB.OptionButton OptBuscar 
+         BackColor       =   &H00FFFFFF&
+         Caption         =   "<"
+         Height          =   195
+         Index           =   0
+         Left            =   1980
+         TabIndex        =   13
+         Top             =   340
+         Width           =   435
+      End
       Begin VB.TextBox TxtOb 
          BackColor       =   &H00E8FFFF&
          Height          =   300
@@ -81,17 +112,17 @@ Begin VB.Form BuscarFrm
          Left            =   4200
          TabIndex        =   3
          ToolTipText     =   "Muestra sólo las tareas no desactivadas"
-         Top             =   350
+         Top             =   705
          Width           =   1695
       End
       Begin VB.TextBox TxtOb 
          BackColor       =   &H00E8FFFF&
          Height          =   300
          Index           =   0
-         Left            =   2640
+         Left            =   780
          MaxLength       =   5
          TabIndex        =   1
-         Top             =   300
+         Top             =   660
          Width           =   555
       End
       Begin VB.TextBox TxtOb 
@@ -101,7 +132,7 @@ Begin VB.Form BuscarFrm
          Left            =   780
          MaxLength       =   150
          TabIndex        =   2
-         Top             =   660
+         Top             =   1020
          Width           =   5175
       End
       Begin VB.Label LblOb 
@@ -121,9 +152,9 @@ Begin VB.Form BuscarFrm
          Caption         =   "Hora"
          Height          =   195
          Index           =   0
-         Left            =   2160
+         Left            =   345
          TabIndex        =   11
-         Top             =   345
+         Top             =   705
          Width           =   345
       End
       Begin VB.Label LblOb 
@@ -132,21 +163,21 @@ Begin VB.Form BuscarFrm
          Caption         =   "Tarea"
          Height          =   195
          Index           =   1
-         Left            =   240
+         Left            =   270
          TabIndex        =   10
-         Top             =   705
+         Top             =   1065
          Width           =   420
       End
    End
    Begin MSHierarchicalFlexGridLib.MSHFlexGrid FlxDatos 
-      Height          =   2715
+      Height          =   5235
       Left            =   60
       TabIndex        =   7
       TabStop         =   0   'False
-      Top             =   1680
-      Width           =   9075
-      _ExtentX        =   16007
-      _ExtentY        =   4789
+      Top             =   2040
+      Width           =   13335
+      _ExtentX        =   23521
+      _ExtentY        =   9234
       _Version        =   393216
       BackColor       =   16777215
       Cols            =   4
@@ -166,7 +197,7 @@ Begin VB.Form BuscarFrm
       Alignment       =   2  'Center
       BackColor       =   &H00E0E0E0&
       BorderStyle     =   1  'Fixed Single
-      Caption         =   "Datos encontrados. Dobleclick para acceder al día de la tarea."
+      Caption         =   "Click en cabecera de columna, ordena. Dobleclick para acceder al día de la tarea"
       BeginProperty Font 
          Name            =   "Verdana"
          Size            =   9.75
@@ -177,11 +208,11 @@ Begin VB.Form BuscarFrm
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00000000&
-      Height          =   315
+      Height          =   435
       Left            =   60
       TabIndex        =   8
-      Top             =   1380
-      Width           =   9075
+      Top             =   1740
+      Width           =   13335
    End
 End
 Attribute VB_Name = "BuscarFrm"
@@ -194,8 +225,8 @@ Option Explicit
 'Aqui tenemos una conexión independiente de la del otro formulario, por lo que no
 'hay problemas al salir se cierra esta conexión
 
-Dim Sql As String
 Dim BD As Database
+Dim blnOrdenFlex As Boolean
 
 'Conecta con la BD
 Private Function ConectaBD() As Boolean
@@ -223,26 +254,40 @@ End Sub
 'Resetea el flex de datos
 Private Sub InicializaFlex()
   FlxDatos.Clear
-  FlxDatos.FormatString = "^Fecha             |^Hora     |Tarea                                                                                                                                       |^Act"
+  FlxDatos.FormatString = "^Fecha             |^Hora     |Tarea                                                                                                                                                                                                                                       |^Act"
   FlxDatos.Rows = 2
 End Sub
 
-'Rellena el flex de datos
-Private Sub RefrescaFlex()
-  Dim Sql As String, Rec As Recordset
-  Dim I As Integer
-  
-  Screen.MousePointer = vbHourglass
+'Crea sql
+Private Function CreaSQL() As String
+  Dim Sql As String
   
   Sql = "select FECHA, HORA, TAREA, ACTIVA" _
       & "  from TAREAS" _
       & " where 1 = 1"
-  If TxtOb(2) <> "" Then Sql = Sql & " and FECHA = #" & Format(TxtOb(2), "mm/dd/yyyy") & "#"
+  If TxtOb(2) <> "" Then
+    Sql = Sql & " and FECHA "
+    If OptBuscar(0).Value Then Sql = Sql & " < "
+    If OptBuscar(1).Value Then Sql = Sql & " = "
+    If OptBuscar(2).Value Then Sql = Sql & " > "
+    Sql = Sql & "#" & Format(TxtOb(2), "mm/dd/yyyy") & "#"
+  End If
   If TxtOb(0) <> "" Then Sql = Sql & " and HORA Like '*" & TxtOb(0) & "*'"
   If TxtOb(1) <> "" Then Sql = Sql & " and TAREA Like '*" & TxtOb(1) & "*'"
   If ChkActivas.Value = vbChecked Then Sql = Sql & " and ACTIVA = 'S'"
   Sql = Sql & " order by FECHA, HORA"
-  Set Rec = BD.OpenRecordset(Sql)
+
+  CreaSQL = Sql
+End Function
+
+'Rellena el flex de datos
+Private Sub RefrescaFlex()
+  Dim Rec As Recordset
+  Dim I As Integer
+  
+  Screen.MousePointer = vbHourglass
+  
+  Set Rec = BD.OpenRecordset(CreaSQL)
   
   InicializaFlex
   I = 0
@@ -267,6 +312,40 @@ Private Sub RefrescaFlex()
   Set Rec = Nothing
   Screen.MousePointer = vbDefault
 End Sub
+    
+'Si se hace click en la cabecera, ordenar por esa columna
+Private Sub FlxDatos_Click()
+  With FlxDatos
+    If .MouseRow < 1 Then
+      blnOrdenFlex = Not blnOrdenFlex
+      
+      If .MouseCol = 0 Then
+        .Col = .MouseCol
+        .Sort = 9
+      Else
+        .Col = .MouseCol
+        If blnOrdenFlex Then
+           .Sort = flexSortStringNoCaseAscending
+        Else
+           .Sort = flexSortStringNoCaseDescending
+        End If
+      End If
+      
+      .Refresh
+    End If
+  End With
+End Sub
+
+'Método de ordenación para el campo fecha
+Private Sub FlxDatos_Compare(ByVal Row1 As Long, ByVal Row2 As Long, Cmp As Integer)
+  With FlxDatos
+    If blnOrdenFlex Then
+      Cmp = IIf(CDate(.TextMatrix(Row1, 0)) < CDate(.TextMatrix(Row2, 0)), 1, -1)
+    Else
+      Cmp = IIf(CDate(.TextMatrix(Row1, 0)) > CDate(.TextMatrix(Row2, 0)), 1, -1)
+    End If
+  End With
+End Sub
 
 'Ir al dato
 Private Sub FlxDatos_DblClick()
@@ -274,12 +353,14 @@ Private Sub FlxDatos_DblClick()
   
   'Sólo dejar acceder a los datos si la agenda está inactiva
   If AgendaFrm.BtnActivar.Visible Then
-    If FlxDatos.TextMatrix(1, 0) <> "" Then
-      AgendaFrm.Calendar.Value = FlxDatos.TextMatrix(FlxDatos.MouseRow, 0)
-      Call AgendaFrm.Calendar_DateClick(FlxDatos.TextMatrix(FlxDatos.MouseRow, 0))
-      Unload Me
-    Else
-      MsgBox "No hay datos.", vbInformation
+    If FlxDatos.MouseRow > 0 Then
+      If FlxDatos.TextMatrix(1, 0) <> "" Then
+        AgendaFrm.Calendar.Value = FlxDatos.TextMatrix(FlxDatos.MouseRow, 0)
+        Call AgendaFrm.Calendar_DateClick(FlxDatos.TextMatrix(FlxDatos.MouseRow, 0))
+        Unload Me
+      Else
+        MsgBox "No hay datos.", vbInformation
+      End If
     End If
   Else
     MsgBox "Para acceder a los datos de ese día, desactive la agenda primero.", vbInformation
@@ -305,19 +386,11 @@ Private Sub BtnAceptar_Click()
 End Sub
 
 Private Sub BtnImprimir_Click()
-  Dim Sql As String, Rec As Recordset
+  Dim Rec As Recordset
   
   Screen.MousePointer = vbHourglass
   
-  Sql = "select FECHA, HORA, TAREA, ACTIVA" _
-      & "  from TAREAS" _
-      & " where 1 = 1"
-  If TxtOb(2) <> "" Then Sql = Sql & " and FECHA = #" & Format(TxtOb(2), "mm/dd/yyyy") & "#"
-  If TxtOb(0) <> "" Then Sql = Sql & " and HORA Like '*" & TxtOb(0) & "*'"
-  If TxtOb(1) <> "" Then Sql = Sql & " and TAREA Like '*" & TxtOb(1) & "*'"
-  If ChkActivas.Value = vbChecked Then Sql = Sql & " and ACTIVA = 'S'"
-  Sql = Sql & " order by FECHA, HORA"
-  Set Rec = BD.OpenRecordset(Sql)
+  Set Rec = BD.OpenRecordset(CreaSQL)
   
   If Not Rec.EOF Then ImpresionTareas Rec, True
   
